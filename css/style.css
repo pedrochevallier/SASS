@@ -26,6 +26,20 @@
           background-color: white;
           color: #000; }
 
+.footer {
+  background-color: #000;
+  height: 30px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center; }
+  .footer ol li {
+    display: inline; }
+    .footer ol li a {
+      padding: 3px; }
+      .footer ol li a i {
+        color: white; }
+
 .nosotros-main {
   height: 80vh;
   display: flex;
@@ -45,17 +59,3 @@
     padding-top: 20px;
     font-size: 22px;
     font-weight: 500; }
-
-.footer {
-  background-color: #000;
-  height: 30px;
-  display: flex;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center; }
-  .footer ol li {
-    display: inline; }
-    .footer ol li a {
-      padding: 3px; }
-      .footer ol li a i {
-        color: white; }

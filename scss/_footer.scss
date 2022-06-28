@@ -1,0 +1,19 @@
+.footer{
+    background-color: #000;
+    height: 30px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    ol{
+        li{
+            display: inline;
+            a{
+                padding: 3px;
+                i{
+                    color: white;
+                }
+            }
+        }
+    }
+}
