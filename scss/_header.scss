@@ -16,17 +16,29 @@
             padding-right: 10px;
             li{
                 display: inline;
-                a{
-                    text-decoration: none;
-                    color: aliceblue;
-                    padding: 5px;
-                    border-radius: 3px;
-                    &:hover{
-                        background-color: white;
-                        color: #000;
-                    }
-                }
             }
         }
     }
 }
+
+@mixin colors($fondo, $color){
+    background-color: $fondo;
+    color: $color;
+}
+
+.nav-button{
+    text-decoration: none;
+    @include colors(#000, #f0f8ff);
+    padding: 5px;
+    border-radius: 3px;
+    &:hover{
+        @include colors(#f0f8ff, #000)
+    }
+}
+
+.current-button{
+    @extend .nav-button;
+    @include colors(#f0f8ff, #000)
+}
+
+
