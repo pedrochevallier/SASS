@@ -1,19 +1,28 @@
 .nosotros-main{
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "nav"
+    "titulo"
+    "parrafo"
+    "footer";
     align-items: center;
+    justify-items: center;
     padding: 30px;
     background-image: url(../img/nosotros70.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 100%;
     color: #000;
     text-align: center;
     h1{
+        grid-area: titulo;
         padding: 15px;
     }
     p{
+        grid-area: parrafo;
+        min-height: 70vh;
         width: 60vw;
         padding-top: 20px;
         font-size: 22px;

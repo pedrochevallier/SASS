@@ -1,0 +1,96 @@
+/* Contenido principal PRODUCTOS*/
+.grilla-productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "nav nav"
+    "titulo titulo"
+    "producto1 producto2"
+    "producto3 producto4"
+    "footer footer";
+    background-color: white;
+    color: black;
+}
+
+.titulo{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.producto1{
+    grid-area: producto1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+.producto1 img{
+    width: 200px;
+    height: auto;
+}
+
+.producto2{
+    grid-area: producto2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+.producto2 img{
+    width: 200px;
+    height: auto;
+}
+
+.producto3{
+    grid-area: producto3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+.producto3 img{
+    width: 200px;
+    height: auto;
+}
+
+.producto4{
+    grid-area: producto4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+.producto4 img{
+    width: 200px;
+    height: auto;
+}
+
+@media(max-width: 768px){
+    .grilla-productos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "nav"
+        "titulo"
+        "producto1"
+        "producto2"
+        "producto3"
+        "producto4"
+        "footer";
+    }
+    .nav-bar{
+        flex-direction: row;
+        height: auto;
+    }
+    .nav-bar ul li{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px; 
+    }
+}

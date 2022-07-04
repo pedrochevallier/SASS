@@ -1,0 +1,33 @@
+.servicios-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 82vh;
+    margin-top: 4rem;
+    background-image: url(../img/Coffee-Beans-PNG-Image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.servicios-main table{
+    margin: 1rem;
+    width: 800px;
+    text-align: center;
+}
+.servicios-main p{
+    margin: 1rem;
+}
+.servicios-main table th,td{
+    border-bottom: 1px solid rgb(79, 44, 44);
+    height: 30px;
+}
+.servicios-main table tr{
+    border-bottom: 1px solid #ddd;
+    width: 8px;
+}
+.servicios-main button{
+    background-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 3px;
+}

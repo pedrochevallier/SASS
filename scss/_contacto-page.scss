@@ -1,0 +1,67 @@
+/* Contenido principal CONTACTO*/
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+    background-color: white;
+    background-image: url(../img/contact-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    color: black;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    form{
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+        padding: 30px;
+        border-width: 2px;
+        border-radius: 5px;
+        p{
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 3px;
+            height: 25px;
+        }
+        input{
+            box-sizing:border-box;
+            background:none;
+            outline:none;
+            resize:none;
+            border:0;
+            transition:all .3s;
+            border-bottom:2px solid #bebed2
+        }
+        textarea{
+            padding: 10px;
+            outline: none;
+            border: 0;
+            border-bottom:2px solid #bebed2
+
+        }
+        button{
+            align-self: center;
+            background: none;
+            border: 0;
+            border-radius: 5px;
+            padding: 5px;
+            width: fit-content;
+            &:hover{
+                background-color: #e4e4ec;
+            }
+            input{
+                border: 0;
+                font-size: larger;
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -4,6 +4,7 @@
   font-family: Arial, Helvetica, sans-serif; }
 
 .nav {
+  grid-area: nav;
   background-color: #000;
   height: 60px;
   overflow: hidden;
@@ -33,6 +34,7 @@
   color: #000; }
 
 .footer {
+  grid-area: footer;
   background-color: #000;
   height: 30px;
   display: flex;
@@ -46,22 +48,265 @@
       .footer ol li a i {
         color: white; }
 
-.nosotros-main {
-  height: 80vh;
+.grilla-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "nav nav nav nav" "primeraSeccionimg primeraSeccionimg primeraSeccion primeraSeccion" "segundaSeccion segundaSeccion segundaSeccionimg segundaSeccionimg" "footer footer footer footer";
+  background-color: white;
+  color: black; }
+
+.primeraSeccionimg {
+  grid-area: primeraSeccionimg;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px; }
+
+.primeraSeccionimg img {
+  height: 300px;
+  width: auto; }
+
+.primeraSeccion {
+  grid-area: primeraSeccion;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 30px;
+  text-align: center; }
+
+.primeraSeccion span {
+  padding-right: 20px; }
+
+.segundaSeccion {
+  grid-area: segundaSeccion;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
+  text-align: center;
+  padding-bottom: 30px; }
+
+.segundaSeccion span {
+  padding-left: 20px; }
+
+.segundaSeccionimg {
+  grid-area: segundaSeccionimg;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px; }
+
+.segundaSeccionimg img {
+  height: 300px;
+  width: auto; }
+
+@media (max-width: 768px) {
+  .grilla-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "primeraSeccionimg" "primeraSeccion" "segundaSeccionimg" "segundaSeccion" "footer"; }
+  .nav-bar {
+    flex-direction: row;
+    height: auto; }
+  .nav-bar ul li {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px; }
+  .primeraSeccionimg img {
+    width: 100vw;
+    height: auto; }
+  .segundaSeccionimg img {
+    width: 100vw;
+    height: auto; } }
+
+.nosotros-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "nav" "titulo" "parrafo" "footer";
+  align-items: center;
+  justify-items: center;
   padding: 30px;
   background-image: url(../img/nosotros70.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 100%;
   color: #000;
   text-align: center; }
   .nosotros-main h1 {
+    grid-area: titulo;
     padding: 15px; }
   .nosotros-main p {
+    grid-area: parrafo;
+    min-height: 70vh;
     width: 60vw;
     padding-top: 20px;
     font-size: 22px;
     font-weight: 500; }
+
+.servicios-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 82vh;
+  margin-top: 4rem;
+  background-image: url(../img/Coffee-Beans-PNG-Image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.servicios-main table {
+  margin: 1rem;
+  width: 800px;
+  text-align: center; }
+
+.servicios-main p {
+  margin: 1rem; }
+
+.servicios-main table th, td {
+  border-bottom: 1px solid #4f2c2c;
+  height: 30px; }
+
+.servicios-main table tr {
+  border-bottom: 1px solid #ddd;
+  width: 8px; }
+
+.servicios-main button {
+  background-color: white;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 3px; }
+
+/* Contenido principal PRODUCTOS*/
+.grilla-productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "nav nav" "titulo titulo" "producto1 producto2" "producto3 producto4" "footer footer";
+  background-color: white;
+  color: black; }
+
+.titulo {
+  grid-area: titulo;
+  display: flex;
+  justify-content: center;
+  padding: 30px; }
+
+.producto1 {
+  grid-area: producto1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px; }
+
+.producto1 img {
+  width: 200px;
+  height: auto; }
+
+.producto2 {
+  grid-area: producto2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px; }
+
+.producto2 img {
+  width: 200px;
+  height: auto; }
+
+.producto3 {
+  grid-area: producto3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px; }
+
+.producto3 img {
+  width: 200px;
+  height: auto; }
+
+.producto4 {
+  grid-area: producto4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px; }
+
+.producto4 img {
+  width: 200px;
+  height: auto; }
+
+@media (max-width: 768px) {
+  .grilla-productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "titulo" "producto1" "producto2" "producto3" "producto4" "footer"; }
+  .nav-bar {
+    flex-direction: row;
+    height: auto; }
+  .nav-bar ul li {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px; } }
+
+/* Contenido principal CONTACTO*/
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "nav" "main" "footer";
+  background-color: white;
+  background-image: url(../img/contact-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+  color: black;
+  justify-items: center;
+  align-items: center;
+  align-content: center; }
+  .contacto form {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    padding: 30px;
+    border-width: 2px;
+    border-radius: 5px; }
+    .contacto form p {
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 3px;
+      height: 25px; }
+    .contacto form input {
+      box-sizing: border-box;
+      background: none;
+      outline: none;
+      resize: none;
+      border: 0;
+      transition: all .3s;
+      border-bottom: 2px solid #bebed2; }
+    .contacto form textarea {
+      padding: 10px;
+      outline: none;
+      border: 0;
+      border-bottom: 2px solid #bebed2; }
+    .contacto form button {
+      align-self: center;
+      background: none;
+      border: 0;
+      border-radius: 5px;
+      padding: 5px;
+      width: fit-content; }
+      .contacto form button:hover {
+        background-color: #e4e4ec; }
+      .contacto form button input {
+        border: 0;
+        font-size: larger;
+        font-weight: bold; }

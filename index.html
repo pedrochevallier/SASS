@@ -1,50 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The coffe Company te ofrece los mejores cafes, directo a tu casa, al mejor precio">
-    <meta name="keywords" content="cafe, tienda, servicio, entrega, rico, mejor, barato, caro">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/28aaae96af.js" crossorigin="anonymous"></script>
     <title>The Coffee Company</title>
 </head>
+
 <body>
-    <!-- ENCABEZADO -->
-    <header class="nav">
-        <a href="index.html">
-            <img src="img/logo_minimal_1.png" alt="logo">
-        </a>
-        <nav>
-            <!-- (ul) Lista no ordenada -->
-            <ul>
-                <!-- (li) List Item -->
-                <li><a class="nav-button" href="../index.html">INICIO</a></li>
-                <li><a class="nav-button" href="./productos.html">PRODUCTOS</a></li>
-                <li><a class="nav-button" href="./servicios.html">SERVICIOS</a></li>
-                <li><a class="current-button" href="./nosotros.html">NOSOTROS</a></li>
-                <li><a class="nav-button" href="./contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="grilla-index">
+        <!-- ENCABEZADO -->
+        <header class="nav">
+            <a href="./index.html">
+                <img src="./img/logo_minimal_1.png" alt="logo">
+            </a>
+            <nav>
+                <!-- (ul) Lista no ordenada -->
+                <ul>
+                    <!-- (li) List Item -->
+                    <li><a class="current-button" href="../index.html">INICIO</a></li>
+                    <li><a class="nav-button" href="./views/productos.html">PRODUCTOS</a></li>
+                    <li><a class="nav-button" href="./views/servicios.html">SERVICIOS</a></li>
+                    <li><a class="nav-button" href="./views/nosotros.html">NOSOTROS</a></li>
+                    <li><a class="nav-button" href="./views/contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- CONTENIDO PRINCIPAL-->
-    <main class="nosotros-main">
-        <!--<img src="./img/nosotros1.jpg" alt="imagen nosotros">-->
-        <h1>The Coffee Company</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae corrupti maiores quibusdam voluptatibus fugit sed ea velit vel exercitationem. Quaerat, repellat, adipisci ipsam eius exercitationem unde culpa consectetur error excepturi sapiente voluptates commodi distinctio ratione minus. Nostrum eaque quisquam sed adipisci aspernatur temporibus itaque facere, vitae numquam, blanditiis magnam repellat.</p>
-    </main>
+        <!-- CONTENIDO PRINCIPAL -->
 
-    <!-- PIE DE PAGINA -->
-    <footer class="footer">
-        <!-- (ol) Lista Ordenada-->
-        <ol>
-            <li><a href="https://www.facebook.com/..."><i class="fa-brands fa-facebook-square fa-lg"></i></a></li>
-            <li><a href="https://www.instagram.com/..."><i class="fa-brands fa-instagram fa-lg"></i></a></li>
-            <li><a href="https://www.twitter.com/..."><i class="fa-brands fa-twitter-square fa-lg"></i></a></li>
-        </ol>
-    </footer>
+        <section class="primeraSeccionimg">
+            <img src="./img/coffee-beans.png" alt="imagen 1" class="animate__animated animate__backInLeft">
+        </section>
+        <section class="primeraSeccion">
+            <span>
+                <h2 class="animate__animated animate__backInRight">Lorem, ipsum dolor.</h2>
+            </span>
+            <span>
+                <p class="animate__animated animate__backInRight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit sapiente facilis temporibus.
+                    Error, eos praesentium iure corporis voluptatum laudantium magnam, provident porro
+                    necessitatibus dolore voluptates?</p>
+            </span>
+        </section>
+
+
+        <section class="segundaSeccion">
+            <span>
+                <h2 class="animate__animated animate__backInLeft">Lorem, ipsum dolor.</h2>
+            </span>
+            <span>
+                <p class="animate__animated animate__backInLeft">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit sapiente facilis temporibus. Error,
+                    eos
+                    praesentium iure corporis voluptatum laudantium magnam, provident porro necessitatibus dolore
+                    voluptates?</p>
+            </span>
+        </section>
+        <section class="segundaSeccionimg">
+            <img src="./img/untitled-project.png" alt="imagen 2" class="animate__animated animate__backInRight">
+        </section>
+
+        <!-- PIE DE PAGINA -->
+        <footer class="footer">
+            <!-- (ol) Lista Ordenada-->
+            <ol>
+                <li><a href="https://www.facebook.com/..."><i class="fa-brands fa-facebook-square fa-lg"></i></a></li>
+                <li><a href="https://www.instagram.com/..."><i class="fa-brands fa-instagram fa-lg"></i></a></li>
+                <li><a href="https://www.twitter.com/..."><i class="fa-brands fa-twitter-square fa-lg"></i></a></li>
+            </ol>
+        </footer>
+    </div>
 </body>
+</div>
+
 </html>
