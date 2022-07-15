@@ -1,6 +1,6 @@
 .nav{
     grid-area: nav;
-    background-color: #000;
+    background-color: #031926;
     height: 60px;
     overflow: hidden;
     display: flex;
@@ -29,17 +29,17 @@
 
 .nav-button{
     text-decoration: none;
-    @include colors(#000, #f0f8ff);
+    @include colors(#031926, #f0f8ff);
     padding: 5px;
     border-radius: 3px;
     &:hover{
-        @include colors(#f0f8ff, #000)
+        @include colors(#f0f8ff, #031926)
     }
 }
 
 .current-button{
     @extend .nav-button;
-    @include colors(#f0f8ff, #000)
+    @include colors(#f0f8ff, #031926)
 }
 
 

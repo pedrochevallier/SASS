@@ -5,7 +5,7 @@
 
 .nav {
   grid-area: nav;
-  background-color: #000;
+  background-color: #031926;
   height: 60px;
   overflow: hidden;
   display: flex;
@@ -21,21 +21,21 @@
 
 .nav-button, .current-button {
   text-decoration: none;
-  background-color: #000;
+  background-color: #031926;
   color: #f0f8ff;
   padding: 5px;
   border-radius: 3px; }
   .nav-button:hover, .current-button:hover {
     background-color: #f0f8ff;
-    color: #000; }
+    color: #031926; }
 
 .current-button {
   background-color: #f0f8ff;
-  color: #000; }
+  color: #031926; }
 
 .footer {
   grid-area: footer;
-  background-color: #000;
+  background-color: #031926;
   height: 30px;
   display: flex;
   overflow: hidden;
@@ -129,56 +129,97 @@
   align-items: center;
   justify-items: center;
   padding: 30px;
-  background-image: url(../img/nosotros70.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent), url("../img/image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100%;
-  color: #000;
+  color: white;
   text-align: center; }
   .nosotros-main h1 {
     grid-area: titulo;
     padding: 15px; }
-  .nosotros-main p {
+  .nosotros-main .descripcion {
     grid-area: parrafo;
+    display: flex;
+    flex-direction: column;
     min-height: 70vh;
     width: 60vw;
     padding-top: 20px;
-    font-size: 22px;
-    font-weight: 500; }
+    font-size: 18px;
+    font-weight: 200; }
+    .nosotros-main .descripcion p {
+      padding-bottom: 5px; }
 
 .servicios-main {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "nav" "titulo" "servicios" "footer";
   align-items: center;
-  height: 82vh;
-  margin-top: 4rem;
-  background-image: url(../img/Coffee-Beans-PNG-Image.png);
+  justify-items: center;
+  min-height: 90vh;
+  text-align: center;
+  background-image: url("../img/Coffee-Beans-PNG-Image.png");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover; }
 
-.servicios-main table {
-  margin: 1rem;
-  width: 800px;
-  text-align: center; }
+.servicios-main {
+  grid-area: titulo;
+  display: flex;
+  flex-direction: column; }
+  .servicios-main h1 {
+    padding-top: 50px; }
+  .servicios-main p {
+    max-width: 400px;
+    padding-top: 10px; }
+  .servicios-main .servicios {
+    padding-top: 80px;
+    display: flex;
+    align-content: center;
+    justify-content: center; }
+    .servicios-main .servicios .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-width: 1px;
+      border-radius: 5px;
+      max-width: 300px;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+      .servicios-main .servicios .cards p {
+        padding-top: 20px;
+        opacity: 1; }
+      .servicios-main .servicios .cards button {
+        border-style: none;
+        background-color: white;
+        margin-top: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-self: center;
+        background: none;
+        border: 0;
+        border-radius: 5px;
+        padding: 5px;
+        width: fit-content;
+        border: 0;
+        font-size: larger;
+        font-weight: bold; }
+        .servicios-main .servicios .cards button:hover {
+          background-color: rgba(3, 25, 38, 0.9);
+          color: white; }
 
-.servicios-main p {
-  margin: 1rem; }
-
-.servicios-main table th, td {
-  border-bottom: 1px solid #4f2c2c;
-  height: 30px; }
-
-.servicios-main table tr {
-  border-bottom: 1px solid #ddd;
-  width: 8px; }
-
-.servicios-main button {
-  background-color: white;
-  border-radius: 5px;
-  border-width: 1px;
-  padding: 3px; }
+@media (max-width: 768px) {
+  .servicios {
+    display: flex;
+    flex-direction: column; }
+    .servicios .cards {
+      margin-bottom: 15px; } }
 
 /* Contenido principal PRODUCTOS*/
 .grilla-productos {
